@@ -73,6 +73,10 @@ nav a:hover{
 }
 #hero{
     padding: 90px 70px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 60px;
 }
 #hero p{
     max-width: 700px;
