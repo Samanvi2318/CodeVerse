@@ -65,10 +65,11 @@ nav a{
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
-    transition: 0.3s;
+    transition: color 0.3s ease;
+                transform 0.3s ease;
 }
 nav a:hover{
-    color: #2563eb;
+    color: var(--primary-color);
     transform: translateY(-2px);
 }
 #hero{
@@ -85,5 +86,36 @@ nav a:hover{
     max-width: 300px;
     width: 100%;
     border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+.hero-image img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+#skills{
+    padding: 80px;
+}
+#skills h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.skills-card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.skill-card:hover{
+    transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
