@@ -189,3 +189,83 @@ nav a:hover{
     background-color: var(--button-color);
     color: white;
 }
+.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+}
+.timeline::before{
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 3px;
+    bottom: 0;
+    background: #2563eb;
+}
+.timeline-item{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-left: 80px;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    position: relative;
+}
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #2563eb;
+    border-radius: 50%;
+    left: -58px;
+    top: 20px;
+    border: 4px solid white;
+}
+.timeline-item span{
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 18px;
+}
+.drives{
+    padding: 80px 10%;
+}
+.drives h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.drives-text{
+    max-width: 700px;
+    margin-bottom: 50px;
+    color: #555;
+    line-height: 1.8
+}
+.drives-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.drive-card{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.drive-card:hover{
+    transform: translateY(-8px);
+}
+.drive-card h3{
+    color: #2563eb;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+.drive-card p{
+    color: #555;
+    line-height: 1.8;
+}
