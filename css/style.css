@@ -109,6 +109,10 @@ nav a:hover{
     gap: 30px;
     margin-top: 40px;
 }
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .skill-card{
     background-color: #2563eb;
     color: white;
@@ -268,4 +272,98 @@ nav a:hover{
 .drive-card p{
     color: #555;
     line-height: 1.8;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+}
+.project-card{
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.project-image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.project-content{
+    padding: 25px;
+}
+.project-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.status{
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.status.completed{
+    background: #dcfce7;
+    color: #15803d;
+}
+.status.in-progress{
+    background: #fef3c7;
+    color: #b45309;
+}
+.project-type{
+    background: #dbeafe;
+    color: #2563eb;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.project-content h3{
+    font-size: 1.6rem;
+    margin: 18px 0 12px;
+    color: #1e293b;
+}
+.project-content p{
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.tech-stack span{
+    background: #dbeafe;
+    color: #2563eb;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.project-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.project-buttons a{
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.project-buttons a:first-child{
+    background: #e2e8f0;
+    color: #1e293b;
+}
+.project-buttons a:last-child{
+    background: #2563eb;
+    color: white;
 }
