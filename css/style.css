@@ -367,3 +367,36 @@ nav a:hover{
     background: #2563eb;
     color: white;
 }
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+} 
+.project-image{
+    transition: transform 0.4s ease;
+}
+.project-card:hover .project-image{
+    transform: scale(1.05);
+}
+.project-buttons a:hover{
+    transform: translateY(-3px);
+}
+.project-buttons a:first-child:hover{
+    background: #cbd5e1;
+}
+.project-buttons a:last-child:hover{
+    background: #1d4ed8;
+}
+.tech-stack span{
+    transition: all 0.3s ease;
+}
+.tech-stack span:hover{
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+}
+.project-buttons a{
+    cursor: pointer;
+}
+.tech-stack span{
+    cursor: default;
+}
