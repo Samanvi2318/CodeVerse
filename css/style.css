@@ -400,3 +400,40 @@ nav a:hover{
 .tech-stack span{
     cursor: default;
 }
+.contact{
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.contact-text h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.cintact-text p{
+    color: #555;
+    line-height: 1.8;
+    max-width: 500px;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.contact-card{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+.contact-icon{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.contact-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
