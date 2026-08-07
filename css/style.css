@@ -96,38 +96,33 @@ nav a:hover{
     transform: scale(1.05);
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
-#skills{
-    padding: 80px;
-}
-#skills h2{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.skills-grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
-    margin-top: 40px;
-}
-.skills-container{
-    display: flex;
-    flex-wrap: wrap;
-}
 .skill-card{
-    background-color: #2563eb;
-    color: white;
-    padding: 15px;
-    border-radius: 12px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-    font-weight:600;
-    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
 }
-.skill-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.skill-icon{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    transition: transform 0.35s ease;
+}
+.skill-card:hover .skill-icon{
+    transform: scale(1.15);
+}
+.skill-story{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.35s ease,
+                transform 0.35s ease;
+}
+.skill-card:hover .skill-story{
+    opacity: 1;
+    transform: translateY(0);
 }
 #projects{
     padding: 80px;
