@@ -454,18 +454,27 @@ nav a:hover{
     gap: 25px;
 }
 .contact-card{
+    cursor: pointer;
     background: white;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 .contact-icon{
     font-size: 2.5rem;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.contact-card:hover .contact-icon{
+    transform: scale(1.12);
 }
 .contact-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.10);
 }
